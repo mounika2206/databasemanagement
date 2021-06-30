@@ -1,0 +1,11 @@
+/node_modules
+package-lock.json
+.env
+
+
+shapeAI.post("/book/add/",(req,res)=>{
+    const {newBook}=req.body;
+    database.books.push(newBook);
+    return res.json({books:database.books,message:"bank was added!"});
+    
+  });
