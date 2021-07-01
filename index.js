@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URL,{
   useFindAndModify: false,
   useCreateIndex: true,
 }
-).then(()=>console.log("connection established"));
+).then(()=>console.log("connection established!!!"));
 
 // Configurations
 shapeAI.use(express.json());
